@@ -123,7 +123,7 @@ bool Charges::import_charges(){
     import_is_success = import_is_success && read_in_nK_quark(0, QuarkID::s );
     import_is_success = import_is_success && read_in_nK_quark(1, QuarkID::s );
     if(config.get_Verbose()){std::cout<< "[ Charges ] S-Quark constructions   -->  Imported "<< std::endl;}
-    import_is_success=true;
+    import_is_success=true; // this line has trouble zzzzj
   }
   else{import_is_success=false;}
 
